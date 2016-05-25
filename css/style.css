@@ -1,20 +1,45 @@
-/* 主题界面 - 双线边框 */
+﻿/* 主题界面 - 双线边框 */
 .main {
 	width: 90%;
 	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 0.5%;
 	padding: 10px;
 	border-style: double;
 	border-width: 5px;
+	position: relative;
+	padding: 0 auto;
+	margin: 0 auto ;
 }
 /* 故事板 - 单线边框 */
 .story-board {
 	height: 500px;
 	border: 1px solid;
 	margin-bottom: 10px;
+	z-index: -1;
+	position: relative;
+	top: 0;
 }
+/* 故事板 - 文字样式 */
+.story-board-text{
+	text-align: center;
+}
+/* 对话框 - 单线边框 */
+.dialog {
+	margin:0px 0px 0px -250px;
+	height: 100px;
+	width: 500px;	
+	border: 1px solid;
+	margin-bottom: 10px;	
+	position: absolute;
+	bottom:0px;
+	left:50%;
+	z-index: 1;
+	box-shadow: 0px 0px 2px black;
+}
+/* 对话框 - 文字样式 */
+.dialog-text{
+	text-align: center;
+}
+
 /* 装备栏 - 双线边框 */
 #equipment {
 	border-style: double;
